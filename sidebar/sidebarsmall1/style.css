@@ -1,0 +1,91 @@
+body{
+    margin:0px;
+}
+
+.container-fluid {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sticky a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #7A7F9A;
+    font-size: 13px;
+}
+.label-container{
+    padding: 9px 15px 20px 15px;
+    text-align: center;
+}
+
+.sidebarsmall1-menu label{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+    color: #7A7F9A;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sticky{
+    position: fixed;
+    width: 4rem;
+    top: 0;
+    bottom:0;
+    overflow-y: auto;
+    margin-top: 68px;
+}
+
+.sidebarsmall1head-menu{
+    background-color: white; 
+    padding: 25px 15px 15px 15px; 
+    box-sizing: border-box;
+    position: fixed;
+    width: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #7A7F9A;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sidebarsmall1-menu{
+    background-color: white;
+    width: 4rem;
+    float: left;
+    bottom: 0; 
+}
+.content{
+    background-color: #EFF3F6;
+    width: calc(100% - 4rem);
+    float: left;
+    display: table;
+}
+.content p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #7A7F9A;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+.sidebarsmall1footer-menu{
+    bottom: 0; 
+    position: absolute; 
+    padding: 9px 15px 25px 15px; 
+    box-sizing: border-box;
+    text-align: center;
+    width: 4rem;
+    color : #7A7F9A;
+}
+.sidebarsmall1footer-menu a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #7A7F9A;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+

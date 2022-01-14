@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ui Dynamic</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/script2.js"></script>
+        <script src="https://kit.fontawesome.com/1d04696186.js" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
+        <link href="assets/images/logo.png" rel="shortcut icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Rampart+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-main">
+              <div class="topnav" id="myTopnav">
+                <div class="logo" id="test1">
+                    <a class="logo-text" href="index.html">👋 Ui Dynamic</a>
+                </div>
+                <a class="link-text" href="https://www.buymeacoffee.com/damnitsawful">Donate</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Components</button>
+                    <div class="dropdown-content">
+                        <a class="link-text" href="socialandreviews.html">Social and Reviews</a>
+                        <a class="link-text" href="marketplace.html">Marketplace</a>
+                        <a class="link-text" href="payment.html">Payment</a>
+                        <a class="link-text" href="sign.html">Sign</a>
+                        <a class="link-text" href="pricing.html">Pricing</a>
+                        <a class="link-text" href="general.html">General</a>
+                        <a class="link-text" href="table.html">Table</a>
+                        <a class="link-text" href="button.html">Button</a>
+                        <a class="link-text" href="menu.html">Menu</a>
+                    </div>
+                </div> 
+                <a class="link-text" href="index.html" class="active">Getting Started</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="heading-container">
+                  <h2 style="margin: 0px;" class="heading1 font-36">Table</h2>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">1. Table large I</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablelarge1-table-->
+                    <div class="col-12">
+                      <div class="tablelarge1-table shadow" >
+                        <div class="tablelarge1head-table"> 
+                          <div class="tablelarge1titlecontainer-table">
+                            <p class="tablelarge1title-table">Table</p>
+                          </div>
+                        </div>
+                        <div class="tablelarge1body-table" style="overflow-x: auto !important;">
+                            <table>
+                              <thead>
+                                <th class="tablelarge1checkhead-table"><input type=checkbox
+                                    onclick="[...closest('table').querySelectorAll('tbody [type=checkbox]')].forEach(box=>box.checked=checked)">
+                                </th>
+                                <th class="tablelarge1useridhead-table">User ID</th>
+                                <th class="tablelarge1namehead-table">Name</th>
+                                <th>Occupation</th>
+                                <th>Earnings</th>
+                                <th>Daily Avg</th>
+                                <th>Change</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td>098811</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile2.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol8-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Maddison Bush</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td> 
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Front-End Developer</p>
+                                    </div>
+                                  </td>
+                                  <td>$40.000</td>
+                                  <td>$400</td>
+                                  <td class="tablelarge1changecolumn-table">18%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk2></td>
+                                  <td>098812</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Danny Alves</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Graphic Designer</p>
+                                    </div>
+                                  </td>
+                                  <td>$46.000</td>
+                                  <td>$420</td>
+                                  <td class="tablelarge1changecolumn-table">60%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk3></td>
+                                  <td>098813</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile5.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Alex River</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Back-End Developer</p>
+                                    </div>
+                                  </td>
+                                  <td>$41.000</td>
+                                  <td>$405</td>
+                                  <td class="tablelarge1changecolumn-table">40%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td>098814</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile3.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Jennifer Schanuth</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Front-End Developer</p>
+                                    </div>
+                                  </td>
+                                  <td>$44.000</td>
+                                  <td>$390</td>
+                                  <td class="tablelarge1changecolumn-table">25%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk2></td>
+                                  <td>098815</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile2.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Emma Macdonald</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Copywriter</p>
+                                    </div>
+                                  </td>
+                                  <td>$38.000</td>
+                                  <td>$410</td>
+                                  <td class="tablelarge1changecolumn-table">30%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk3></td>
+                                  <td>098816</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile4.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Ashley Jane</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Graphic Designer</p>
+                                    </div>
+                                  </td>
+                                  <td>$52.000</td>
+                                  <td>$500</td>
+                                  <td class="tablelarge1changecolumn-table">20%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td>098817</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile3.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Ailah Riley</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Front-End Developer</p>
+                                    </div>
+                                  </td>
+                                  <td>$40.000</td>
+                                  <td>$408</td>
+                                  <td class="tablelarge1changecolumn-table">50%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk2></td>
+                                  <td>098818</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile5.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Samuel Conte</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Copywriter</p>
+                                    </div>
+                                  </td>
+                                  <td>$32.000</td>
+                                  <td>$420</td>
+                                  <td class="tablelarge1changecolumn-table">35%</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk3></td>
+                                  <td>098819</td>
+                                  <td class="tablelarge1profilecolumn-table">
+                                    <div class="tablelarge1namecontainer-table">
+                                      <div class="tablelarge1namecol3-table">
+                                        <img  src="assets/images/Profile.png" alt="Card image cap" class="tablelarge1nameprofilepic-table">
+                                      </div>
+                                      <div class="tablelarge1namecol12-table">
+                                        <div class="dim12">
+                                          <p class="tablelarge1nametext-table">Peter Jefferson</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="tablelarge1occupationcontainer-table">
+                                      <p class="tablelarge1occupation-table ">Back-End Developer</p>
+                                    </div>
+                                  </td>
+                                  <td>$47.000</td>
+                                  <td>$340</td>
+                                  <td class="tablelarge1changecolumn-table">30%</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablelarge1-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;div class=&quot;tablelarge1-table shadow&quot; &gt;
+        &lt;div class=&quot;tablelarge1head-table&quot;&gt; 
+          &lt;div class=&quot;tablelarge1titlecontainer-table&quot;&gt;
+            &lt;p class=&quot;tablelarge1title-table&quot;&gt;Table&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablelarge1body-table&quot; style=&quot;overflow-x: auto !important;&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th class=&quot;tablelarge1checkhead-table&quot;&gt;&lt;input type=checkbox
+                    onclick=&quot;[...closest('table').querySelectorAll('tbody [type=checkbox]')].forEach(box=&gt;box.checked=checked)&quot;&gt;
+                &lt;/th&gt;
+                &lt;th class=&quot;tablelarge1useridhead-table&quot;&gt;User ID&lt;/th&gt;
+                &lt;th class=&quot;tablelarge1namehead-table&quot;&gt;Name&lt;/th&gt;
+                &lt;th&gt;Occupation&lt;/th&gt;
+                &lt;th&gt;Earnings&lt;/th&gt;
+                &lt;th&gt;Daily Avg&lt;/th&gt;
+                &lt;th&gt;Change&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;&lt;input type=checkbox name=chk value=chk1&gt;&lt;/td&gt;
+                  &lt;td&gt;098811&lt;/td&gt;
+                  &lt;td class=&quot;tablelarge1profilecolumn-table&quot;&gt;
+                    &lt;div class=&quot;tablelarge1namecontainer-table&quot;&gt;
+                      &lt;div class=&quot;tablelarge1namecol3-table&quot;&gt;
+                        &lt;img  src=&quot;assets/images/Profile2.png&quot; alt=&quot;Card image cap&quot; class=&quot;tablelarge1nameprofilepic-table&quot;&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;tablelarge1namecol8-table&quot;&gt;
+                        &lt;div class=&quot;dim12&quot;&gt;
+                          &lt;p class=&quot;tablelarge1nametext-table&quot;&gt;Maddison Bush&lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  &lt;td&gt; 
+                    &lt;div class=&quot;tablelarge1occupationcontainer-table&quot;&gt;
+                      &lt;p class=&quot;tablelarge1occupation-table &quot;&gt;Front-End Developer&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  &lt;td&gt;$40.000&lt;/td&gt;
+                  &lt;td&gt;$400&lt;/td&gt;
+                  &lt;td class=&quot;tablelarge1changecolumn-table&quot;&gt;18%&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">2. Table large II</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablelarge2-table-->
+                    <div class="col-12">
+                      <div class="tablelarge2-table shadow">
+                        <div class="tablelarge2head-table"> 
+                          <div class="tablelarge2titlecontainer-table">
+                            <p class="tablelarge2title-table">Table</p>
+                          </div>
+                        </div>
+                        <div class="tablelarge2body-table">
+                            <table>
+                              <thead>
+                                <th class="tablelarge2checkhead-table">
+                                  <input type=checkbox onclick="[...closest('table').querySelectorAll('tbody [type=checkbox]')].forEach(box=>box.checked=checked)">
+                                </th>
+                                <th class="tablelarge2useridhead-table">User ID</th>
+                                <th class="tablelarge2namehead-table">Name</th>
+                                <th>Occupation</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Registered</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098811</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Maddison Bush
+                                  </td>
+                                  <td> 
+                                    Back-End Developer
+                                  </td>
+                                  <td>maddisonbush@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>16 hours ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098812</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Danny Alves
+                                  </td>
+                                  <td> 
+                                    Front-End Developer
+                                  </td>
+                                  <td>dannyalves@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>5 days ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098813</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Alex Rivera
+                                  </td>
+                                  <td> 
+                                    Graphic Design
+                                  </td>
+                                  <td>alexrivera@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>1 week ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098814</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Jennifer Schanuth
+                                  </td>
+                                  <td> 
+                                    Copywriter
+                                  </td>
+                                  <td>jenniferschanuth@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>1 hours ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098815</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Emma Macdonald
+                                  </td>
+                                  <td> 
+                                    Back-End Developer
+                                  </td>
+                                  <td>emmamacdonald@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>12 hours ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098816</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Ashley Jane
+                                  </td>
+                                  <td> 
+                                    Front-End Developer
+                                  </td>
+                                  <td>ashleyjane@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>3 days ago</td>
+                                </tr>
+                                <tr>
+                                  <td><input type=checkbox name=chk value=chk1></td>
+                                  <td class="tablelarge2noidcolumn-table">098817</td>
+                                  <td class="tablelarge2profilecolumn-table">
+                                    Ailah Riley
+                                  </td>
+                                  <td> 
+                                    Back-End Developer
+                                  </td>
+                                  <td>ailahriley@mail.com</td>
+                                  <td>Owner</td>
+                                  <td>5 days ago</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablelarge2-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;div class=&quot;tablelarge2-table shadow&quot;&gt;
+        &lt;div class=&quot;tablelarge2head-table&quot;&gt; 
+          &lt;div class=&quot;tablelarge2titlecontainer-table&quot;&gt;
+            &lt;p class=&quot;tablelarge2title-table&quot;&gt;Table&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablelarge2body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th class=&quot;tablelarge2checkhead-table&quot;&gt;
+                  &lt;input type=checkbox onclick=&quot;[...closest('table').querySelectorAll('tbody [type=checkbox]')].forEach(box=&gt;box.checked=checked)&quot;&gt;
+                &lt;/th&gt;
+                &lt;th class=&quot;tablelarge2useridhead-table&quot;&gt;User ID&lt;/th&gt;
+                &lt;th class=&quot;tablelarge2namehead-table&quot;&gt;Name&lt;/th&gt;
+                &lt;th&gt;Occupation&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Registered&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;&lt;input type=checkbox name=chk value=chk1&gt;&lt;/td&gt;
+                  &lt;td class=&quot;tablelarge2noidcolumn-table&quot;&gt;098811&lt;/td&gt;
+                  &lt;td class=&quot;tablelarge2profilecolumn-table&quot;&gt;
+                    Maddison Bush
+                  &lt;/td&gt;
+                  &lt;td&gt; 
+                    Back-End Developer
+                  &lt;/td&gt;
+                  &lt;td&gt;maddisonbush@mail.com&lt;/td&gt;
+                  &lt;td&gt;Owner&lt;/td&gt;
+                  &lt;td&gt;16 hours ago&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">3. Table large III</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablelarge3-table-->
+                    <div class="col-12">
+                      <div class="tablelarge3-table shadow">
+                        <div class="tablelarge3head-table"> 
+                          <div class="tablelarge3titlecontainer-table">
+                            <p class="tablelarge3title-table">Table</p>
+                          </div>
+                        </div>
+                        <div class="tablelarge3body-table">
+                            <table>
+                              <thead>
+                                <th class="tablelarge3useridhead-table">Product</th>
+                                <th class="tablelarge3namehead-table">Creator</th>
+                                <th>Rating</th>
+                                <th>Created</th>
+                                <th>Potential Reach</th>
+                                <th>Reach to Date</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="tablelarge3imagecontainer-table">
+                                      <img  src="assets/images/carddisplay1.png" alt="Card image cap" class="tablelarge3image-table"  alt="IMAGE">
+                                    </div>
+                                  </td>
+                                  <td>
+                                  Maddison Bush
+                                  </td>
+                                  <td> 
+                                    <span>4.0</span>
+                                    <span><i class="material-icons" style="font-size: 15px; vertical-align: -2;  color:#FED568">star</i></span>
+                                    <span>500 reviews</span>
+                                  </td>
+                                  <td>16 hours ago</td>
+                                  <td>16.000 - 20.000</td>
+                                  <td>6.750</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="tablelarge3imagecontainer-table">
+                                      <img  src="assets/images/carddisplay1.png" alt="Card image cap" class="tablelarge3image-table"  alt="IMAGE">
+                                    </div>
+                                  </td>
+                                  <td>
+                                  Danny Alves
+                                  </td>
+                                  <td> 
+                                    <span>4.0</span>
+                                    <span><i class="material-icons" style="font-size: 15px; vertical-align: -2;  color:#FED568">star</i></span>
+                                    <span>500 reviews</span>
+                                  </td>
+                                  <td>5 days ago</td>
+                                  <td>9.000 - 17.000</td>
+                                  <td>8.000</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="tablelarge3imagecontainer-table">
+                                      <img  src="assets/images/carddisplay1.png" alt="Card image cap" class="tablelarge3image-table"  alt="IMAGE">
+                                    </div>
+                                  </td>
+                                  <td>
+                                  Alex Rivera
+                                  </td>
+                                  <td> 
+                                    <span>4.0</span>
+                                    <span><i class="material-icons" style="font-size: 15px; vertical-align: -2;  color:#FED568">star</i></span>
+                                    <span>500 reviews</span>
+                                  </td>
+                                  <td>1 week ago</td>
+                                  <td>25.000 - 30.000</td>
+                                  <td>7.650</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="tablelarge3imagecontainer-table">
+                                      <img  src="assets/images/carddisplay1.png" alt="Card image cap" class="tablelarge3image-table"  alt="IMAGE">
+                                    </div>
+                                  </td>
+                                  <td>
+                                  Jennifer Schanuth
+                                  </td>
+                                  <td> 
+                                    <span>4.0</span>
+                                    <span><i class="material-icons" style="font-size: 15px; vertical-align: -2;  color:#FED568">star</i></span>
+                                    <span>500 reviews</span>
+                                  </td>
+                                  <td>1 hours ago</td>
+                                  <td>50.000 - 76.000</td>
+                                  <td>10.000</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablelarge3-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;div class=&quot;tablelarge3-table shadow&quot;&gt;
+        &lt;div class=&quot;tablelarge3head-table&quot;&gt; 
+          &lt;div class=&quot;tablelarge3titlecontainer-table&quot;&gt;
+            &lt;p class=&quot;tablelarge3title-table&quot;&gt;Table&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tablelarge3body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th class=&quot;tablelarge3useridhead-table&quot;&gt;Product&lt;/th&gt;
+                &lt;th class=&quot;tablelarge3namehead-table&quot;&gt;Creator&lt;/th&gt;
+                &lt;th&gt;Rating&lt;/th&gt;
+                &lt;th&gt;Created&lt;/th&gt;
+                &lt;th&gt;Potential Reach&lt;/th&gt;
+                &lt;th&gt;Reach to Date&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    &lt;div class=&quot;tablelarge3imagecontainer-table&quot;&gt;
+                      &lt;img  src=&quot;assets/images/carddisplay1.png&quot; alt=&quot;Card image cap&quot; class=&quot;tablelarge3image-table&quot;  alt=&quot;IMAGE&quot;&gt;
+                    &lt;/div&gt;
+                  &lt;/td&gt;
+                  &lt;td&gt;
+                  Maddison Bush
+                  &lt;/td&gt;
+                  &lt;td&gt; 
+                    &lt;span&gt;4.0&lt;/span&gt;
+                    &lt;span&gt;&lt;i class=&quot;material-icons&quot; style=&quot;font-size: 15px; vertical-align: -2;  color:#FED568&quot;&gt;star&lt;/i&gt;&lt;/span&gt;
+                    &lt;span&gt;500 reviews&lt;/span&gt;
+                  &lt;/td&gt;
+                  &lt;td&gt;16 hours ago&lt;/td&gt;
+                  &lt;td&gt;16.000 - 20.000&lt;/td&gt;
+                  &lt;td&gt;6.750&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">4. Table medium I</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablemedium1-table-->
+                    <div class="col-8">
+                      <div class="tablemedium1-table shadow">
+                        <div class="tablemedium1body-table">
+                            <table>
+                              <thead>
+                              
+                                <th class="tablemedium1useridhead-table">No</th>
+                                <th class="tablemedium1namehead-table">Name</th>
+                              
+                                <th>Email</th>
+                                <th>Earnings</th>
+                                <th>Created</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                
+                                  <td class="tablemedium1noidcolumn-table">1</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Maddison Bush
+                                  </td>
+                                
+                                  <td>maddisonbush@mail.com</td>
+                                  <td>$120.00</td>
+                                  <td>16 hours ago</td>
+                                </tr>
+                                <tr>
+                                
+                                  <td class="tablemedium1noidcolumn-table">2</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Danny Alves
+                                  </td>
+                                  
+                                  <td>dannyalves@mail.com</td>
+                                  <td>$200.00</td>
+                                  <td>5 days ago</td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="tablemedium1noidcolumn-table">3</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Alex Rivera
+                                  </td>
+                                  
+                                  <td>alexrivera@mail.com</td>
+                                  <td>$300.00</td>
+                                  <td>1 week ago</td>
+                                </tr>
+                                <tr>
+                                
+                                  <td class="tablemedium1noidcolumn-table">4</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Jennifer Schanuth
+                                  </td>
+                                  
+                                  <td>jenniferschanuth@mail.com</td>
+                                  <td>$145.00</td>
+                                  <td>1 hours ago</td>
+                                </tr>
+                                <tr>
+                                
+                                  <td class="tablemedium1noidcolumn-table">5</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Emma Macdonald
+                                  </td>
+                                
+                                  <td>emmamacdonald@mail.com</td>
+                                  <td>$240.00</td>
+                                  <td>12 hours ago</td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="tablemedium1noidcolumn-table">6</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Ashley Jane
+                                  </td>
+                                  
+                                  <td>ashleyjane@mail.com</td>
+                                  <td>$350.00</td>
+                                  <td>3 days ago</td>
+                                </tr>
+                                <tr>
+                              
+                                  <td class="tablemedium1noidcolumn-table">7</td>
+                                  <td class="tablemedium1profilecolumn-table">
+                                    Ailah Riley
+                                  </td>
+                                
+                                  <td>ailahriley@mail.com</td>
+                                  <td>$247.00</td>
+                                  <td>5 days ago</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablemedium1-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-8&quot;&gt;
+      &lt;div class=&quot;tablemedium1-table shadow&quot;&gt;
+        &lt;div class=&quot;tablemedium1body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th class=&quot;tablemedium1useridhead-table&quot;&gt;No&lt;/th&gt;
+                &lt;th class=&quot;tablemedium1namehead-table&quot;&gt;Name&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Earnings&lt;/th&gt;
+                &lt;th&gt;Created&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td class=&quot;tablemedium1noidcolumn-table&quot;&gt;1&lt;/td&gt;
+                  &lt;td class=&quot;tablemedium1profilecolumn-table&quot;&gt;
+                    Maddison Bush
+                  &lt;/td&gt;
+                  &lt;td&gt;maddisonbush@mail.com&lt;/td&gt;
+                  &lt;td&gt;$120.00&lt;/td&gt;
+                  &lt;td&gt;16 hours ago&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">5. Table medium II</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablemedium2-table-->
+                    <div class="col-8">
+                      <div class="tablemedium2-table shadow">
+                        <div class="tablemedium2body-table">
+                            <table>
+                              <thead>
+                                <th>
+                                <p>Vehicle Specs Compare</p>
+                                </th>
+                                <th>
+                                  <p>SR</p>
+                                  <p>$22.000</p>
+                                  <div class="buttoncontainer-button btn-blocked">
+                                    <button type="submit" href="#" class="button-button btn-purple btn-text-white">Select Vehicle</button>  
+                                  </div>   
+                                </th>
+                                <th>
+                                  <p>TRD Sport</p>
+                                  <p>$25.000</p>
+                                  <div class="buttoncontainer-button btn-blocked">
+                                    <button type="submit" href="#" class="button-button btn-purple btn-text-white">Select Vehicle</button>  
+                                  </div>   
+                                </th>
+                                <th>
+                                  <p>Ultimate</p>
+                                  <p>$31.000</p>
+                                  <div class="buttoncontainer-button btn-blocked">
+                                    <button type="submit" href="#" class="button-button btn-purple btn-text-white">Select Vehicle</button>  
+                                  </div>   
+                                </th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">LED Headlight</th>
+                                  <td>Not Included</td>
+                                  <td>Included</td>
+                                  <td>Included</td>
+                                </tr>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">Mud Guard</th>
+                                  <td>Included</td>
+                                  <td>Included</td>
+                                  <td>Included</td>
+                                </tr>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">Daytime Running Light</th>
+                                  <td>Not Included</td>
+                                  <td>Not Included</td>
+                                  <td>Included</td>
+                                </tr>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">Over Fender</th>
+                                  <td>Not Included</td>
+                                  <td>Not Included</td>
+                                  <td>Included</td>
+                                </tr>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">Tow Bar</th>
+                                  <td>Included</td>
+                                  <td>Included</td>
+                                  <td>Included</td>
+                                </tr>
+                                <tr>
+                                  <th class="tablemedium2rowhead-table">TRD Pro Skid Plate</th>
+                                  <td>Not Included</td>
+                                  <td>Not Included</td>
+                                  <td>Included</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablemedium2-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-8&quot;&gt;
+      &lt;div class=&quot;tablemedium2-table shadow&quot;&gt;
+        &lt;div class=&quot;tablemedium2body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th&gt;
+                &lt;p&gt;Vehicle Specs Compare&lt;/p&gt;
+                &lt;/th&gt;
+                &lt;th&gt;
+                  &lt;p&gt;SR&lt;/p&gt;
+                  &lt;p&gt;$22.000&lt;/p&gt;
+                  &lt;div class=&quot;buttoncontainer-button btn-blocked&quot;&gt;
+                    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button-button btn-purple btn-text-white&quot;&gt;Select Vehicle&lt;/button&gt;  
+                  &lt;/div&gt;   
+                &lt;/th&gt;
+                &lt;th&gt;
+                  &lt;p&gt;TRD Sport&lt;/p&gt;
+                  &lt;p&gt;$25.000&lt;/p&gt;
+                  &lt;div class=&quot;buttoncontainer-button btn-blocked&quot;&gt;
+                    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button-button btn-purple btn-text-white&quot;&gt;Select Vehicle&lt;/button&gt;  
+                  &lt;/div&gt;   
+                &lt;/th&gt;
+                &lt;th&gt;
+                  &lt;p&gt;Ultimate&lt;/p&gt;
+                  &lt;p&gt;$31.000&lt;/p&gt;
+                  &lt;div class=&quot;buttoncontainer-button btn-blocked&quot;&gt;
+                    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button-button btn-purple btn-text-white&quot;&gt;Select Vehicle&lt;/button&gt;  
+                  &lt;/div&gt;   
+                &lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;LED Headlight&lt;/th&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;Mud Guard&lt;/th&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;Daytime Running Light&lt;/th&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;Over Fender&lt;/th&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;Tow Bar&lt;/th&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;tablemedium2rowhead-table&quot;&gt;TRD Pro Skid Plate&lt;/th&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Not Included&lt;/td&gt;
+                  &lt;td&gt;Included&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">6. Table small I</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablesmall1-table-->
+                    <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+                      <div class="tablesmall1-table shadow">
+                        <div class="tablesmall1body-table">
+                            <table>
+                              <thead>
+                                <th>Sport</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>LED Headlight</td>
+                                </tr>
+                                <tr>
+                                  <td>Mud Guard</td>
+                                </tr>
+                                <tr>
+                                  <td>Daytime Running Light</td>
+                                </tr>
+                                <tr>
+                                  <td>Over Fender</td>
+                                </tr>
+                                <tr>
+                                  <td>Tow Bar</td>
+                                </tr>
+                                <tr>
+                                  <td>TRD Pro Skid Plate</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablesmall1-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-lg-4 col-md-6 col-sm-10 col-12&quot;&gt;
+      &lt;div class=&quot;tablesmall1-table shadow&quot;&gt;
+        &lt;div class=&quot;tablesmall1body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th&gt;Sport&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;LED Headlight&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Mud Guard&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Daytime Running Light&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Over Fender&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Tow Bar&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;TRD Pro Skid Plate&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">7. Table small II</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablesmall2-table-->
+                    <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+                      <div class="tablesmall2-table shadow">
+                        <div class="tablesmall2body-table">
+                            <table>
+                              <thead>
+                                <th>Ultimate</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>LED Headlight</td>
+                                </tr>
+                                <tr>
+                                  <td>Mud Guard</td>
+                                </tr>
+                                <tr>
+                                  <td>Daytime Running Light</td>
+                                </tr>
+                                <tr>
+                                  <td>Over Fender</td>
+                                </tr>
+                                <tr>
+                                  <td>Tow Bar</td>
+                                </tr>
+                                <tr>
+                                  <td>TRD Pro Skid Plate</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablesmall2-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+
+    &lt;div class=&quot;col-lg-4 col-md-6 col-sm-10 col-12&quot;&gt;
+      &lt;div class=&quot;tablesmall2-table shadow&quot;&gt;
+        &lt;div class=&quot;tablesmall2body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th&gt;Ultimate&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;LED Headlight&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Mud Guard&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Daytime Running Light&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Over Fender&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Tow Bar&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;TRD Pro Skid Plate&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+                  <div class="col-12" style="padding: 15px 0px">
+                    <h2 style="margin: 0px;" class="paragraph font-600 font-22">8. Table small III</h2>
+                  </div>
+                  <div class="col-12 bg-yellow border-radius">
+                    <!--Start of tablesmall3-table-->
+                    <div class="col-lg-4 col-md-6 col-sm-10 col-12">
+                      <div class="tablesmall3-table">
+                        <div class="tablesmall3body-table">
+                            <table>
+                              <thead>
+                                <th>Luxury</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>LED Headlight</td>
+                                </tr>
+                                <tr>
+                                  <td>Mud Guard</td>
+                                </tr>
+                                <tr>
+                                  <td>Daytime Running Light</td>
+                                </tr>
+                                <tr>
+                                  <td>Over Fender</td>
+                                </tr>
+                                <tr>
+                                  <td>Tow Bar</td>
+                                </tr>
+                                <tr>
+                                  <td>TRD Pro Skid Plate</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                      </div>
+                    </div>
+                    <!--End of tablesmall3-table-->
+                  </div>
+                  <div class="col-7" style="padding: 15px 0px">
+                    <p class="paragraph font-black font-6 font-400 lineheight-2">
+                        Bagaimana cara penggunaannya ?. Setelah anda mendownload file uiDynamic dan melakukan konfigurasi pada proyek anda. 
+                        Sekarang saatnya untuk menyematkan element yang sudah anda tentukan. Dapatkan <a class="text-link" href="" >disini.</a> 
+                    </p>
+                  </div>
+
+                  <div class="col-12 " style="padding: 0px 0px 15px 0px">
+                    <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
+                      
+    &lt;div class=&quot;col-lg-4 col-md-6 col-sm-10 col-12&quot;&gt;
+      &lt;div class=&quot;tablesmall3-table&quot;&gt;
+        &lt;div class=&quot;tablesmall3body-table&quot;&gt;
+            &lt;table&gt;
+              &lt;thead&gt;
+                &lt;th&gt;Luxury&lt;/th&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;LED Headlight&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Mud Guard&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Daytime Running Light&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Over Fender&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;Tow Bar&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;TRD Pro Skid Plate&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;      
+      &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                  </div>
+
+
+                </div>
+            </div>
+            <!--Start of footernavigation-menu -->
+            <div class="col-12" style="background-color: #222529;">
+                <div class="container-fluid" style="padding: 0px !important;">
+                    <div class="row">
+                    <div style="text-align: center; padding: 15px; box-sizing: border-box;">
+                        <p class="text-white">Made On Earth By Human. All rights reserved © 2022.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of footernavigation-menu -->
+        </div>
+    </body>
+</html>
