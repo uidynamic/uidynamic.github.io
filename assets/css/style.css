@@ -74,6 +74,9 @@
 .font-grey{
     color : #b0b0b0 !important;
 }
+.font-dark-grey{
+  color: #747373 !important
+}
 .font-dark-blue{
     color : #33485B !important;
 }
@@ -2668,6 +2671,9 @@ a {
 .purple{
   background-color: #6200A0;
 }
+.grey{
+  background-color: #b0b0b0;
+}
 /*End of carditemsmall-marketplace*/
 
 /*Start carddisplay1-marketplace*/
@@ -3002,12 +3008,11 @@ a {
   margin :0;
 }
 .cardpromomediumtitle-marketplace{
-  margin-left: 10;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: #090865;
   font-size: 12px;
-  margin: 0;
+  margin: 0px;
 }
 .cardpromomediumfooter-marketplace{
   display: flex;
@@ -8790,6 +8795,7 @@ line-height: 1.6;
 }
 .btn-border-purple {
   border: 0.4px solid #3E3BEE !important;
+  margin: -1px;
 }
 .btn-border-red {
   border: 0.4px solid #F83882 !important;
@@ -8815,8 +8821,11 @@ line-height: 1.6;
   width: 16.66%;
   box-sizing: border-box;
 }
+
+.btn-no-border{
+  border: none !important;
+}
 .button-button{
-  border: none;
   color: white;
   padding: 11px;
   line-height: 1.4em;
@@ -8941,6 +8950,247 @@ line-height: 1.6;
 }
 /*End of buttonroundedsmall-button*/
 
+/*Team*/
+
+/*Start of cardteamprofile1-team*/
+.cardteamprofile1-team{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.cardteamprofile1body-team{
+  width: 100%;
+}
+.cardteamprofile1imagepreview-team{
+  aspect-ratio: 4/3;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cardteamprofile1imagepreviewpic-team{
+  vertical-align: middle;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+.cardteamprofile1title-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #090865;
+  margin : 0;
+  font-size: 16px;
+}
+.cardteamprofile1occupation-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #7A7F9A;
+  margin : 5px 0px 5px 0px;
+  font-size: 14px;
+}
+.cardteamprofile1icon-team{
+  font-family: 'Inter', sans-serif;
+  color: #7A7F9A !important;
+  margin : 5px 5px 0px 0px;
+}
+.cardteamprofile1desccontainer-team{
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+  box-sizing: border-box;
+}
+/*End of cardteamprofile1-team*/
+
+/*Start of cardteamprofile2-team*/
+.cardteamprofile2-team{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.cardteamprofile2body-team{
+  width: 100%;
+}
+.cardteamprofile2imagepreview-team{
+  aspect-ratio: 4/3;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cardteamprofile2imagepreviewpic-team{
+  vertical-align: middle;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+.cardteamprofile2title-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #090865;
+  margin : 0;
+  font-size: 16px;
+}
+.cardteamprofile2occupation-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #7A7F9A;
+  margin : 5px 0px 5px 0px;
+  font-size: 14px;
+}
+.cardteamprofile2icon-team{
+  font-family: 'Inter', sans-serif;
+  color: #7A7F9A !important;
+  margin : 5px 5px 0px 0px;
+}
+.cardteamprofile2desc-team{
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+color: #AAB0CE;
+font-size: 10px;
+margin: 0px 0px 9px 0px;
+line-height: 1.6;
+}
+.cardteamprofile2desccontainer-team{
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+  box-sizing: border-box;
+}
+/*End of cardteamprofile2-team*/
+
+/*Start of cardteamprofile3-team*/
+.cardteamprofile3-team{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.cardteamprofile3body-team{
+  width: 100%;
+}
+.cardteamprofile3imagepreview-team{
+  aspect-ratio: 1/1;
+  width: 60%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.cardteamprofile3imagepreviewpic-team{
+  vertical-align: middle;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cardteamprofile3title-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #090865;
+  margin : 0;
+  font-size: 16px;
+}
+.cardteamprofile3occupation-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #7A7F9A;
+  margin : 5px 0px 5px 0px;
+  font-size: 14px;
+}
+.cardteamprofile3icon-team{
+  font-family: 'Inter', sans-serif;
+  color: #7A7F9A !important;
+  margin : 8px 5px 0px 0px;
+}
+.cardteamprofile3desccontainer-team{
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cardteamprofile3imagecontainer{
+  width: 100%; 
+  text-align: center;
+}
+/*End of cardteamprofile3-team*/
+
+/*Start of cardteamprofile4-team*/
+.cardteamprofile4-team{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+}
+.cardteamprofile4body-team{
+  width: 100%;
+}
+.cardteamprofile4imagepreview-team{
+  aspect-ratio: 1/1;
+  width: 60%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.cardteamprofile4imagepreviewpic-team{
+  vertical-align: middle;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cardteamprofile4title-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #090865;
+  margin : 0;
+  font-size: 16px;
+}
+.cardteamprofile4occupation-team{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #7A7F9A;
+  margin : 5px 0px 5px 0px;
+  font-size: 14px;
+}
+.cardteamprofile4desccontainer-team{
+  width: 100%;
+  padding: 0px 15px 15px 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cardteamprofile4imagecontainer{
+  width: 100%; 
+  text-align: center;
+}
+/*End of cardteamprofile4-team*/
+
 /*faq*/
 
 /*Start of frequentlyaskedquestion-faq*/
@@ -8954,6 +9204,9 @@ line-height: 1.6;
   align-items: center;
   border-radius: 8px;
   background-color: white;
+}
+.frequentlyaskedquestionhead-faq{
+  margin: 15px 0px 0px 0px;
 }
 .frequentlyaskedquestionbody-faq{
   width: 100%;
