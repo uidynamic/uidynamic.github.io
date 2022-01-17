@@ -8822,10 +8822,9 @@ line-height: 1.6;
   box-sizing: border-box;
 }
 
-.btn-no-border{
-  border: none !important;
-}
+
 .button-button{
+  border: none;
   color: white;
   padding: 11px;
   line-height: 1.4em;
