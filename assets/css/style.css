@@ -1839,16 +1839,16 @@ a {
   width : 100% !important;
   height: 8px !important;
   position: absolute !important;
-  bottom: 8 !important;
-  left: 0 !important;
+  bottom: 8px !important;
+  left: 0px !important;
   border-radius: 25px !important;
 }
 .cardratingmediumrunningprogress-social{
   background-color: #3E3BEE;
   height: 8px !important;
   position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
+  bottom: 0px !important;
+  left: 0px !important;
   border-radius: 25px !important;
 }
 .cardratingmediumvaluenumber-social{
@@ -2063,8 +2063,8 @@ a {
   width : 100% !important;
   height: 8px !important;
   position: absolute !important;
-  bottom: 8 !important;
-  left: 0 !important;
+  bottom: 8px !important;
+  left: 0px !important;
   border-radius: 25px !important;
 }
 .cardratingsmallrunningprogress-social{
@@ -2259,8 +2259,8 @@ a {
 .cardratinglargecommentsectionbodytitle-social{
   width: 100%;
   display: table;
-  margin-top: 15;
-  margin-bottom: 15;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
 }
 .cardratinglargecommentsectionbodycontent-social{
