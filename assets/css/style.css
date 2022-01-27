@@ -356,6 +356,7 @@ a {
     position: absolute;
     right: 0;
     top: 0;
+    margin-right: 20px;
   }
   .topnav.responsive a {
     float: none;
