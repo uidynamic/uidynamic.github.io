@@ -387,6 +387,291 @@
                   <div class="col-12 " style="padding: 0px 0px 15px 0px">
                     <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
 
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;rel=&quot;stylesheet&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;rel=&quot;stylesheet&quot;&gt;
+        &lt;/head&gt;
+        &lt;style&gt;
+            body{
+                margin:0px;
+            }
+
+            .container-fluid {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            ul.demo{
+                list-style-type: none;
+                margin: 0;
+                padding: 15px 15px 15px 30px;
+                box-sizing: border-box;
+            }
+            .demo li{
+                margin: 15px 0px 15px 0px;
+            }
+            .sticky a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #44485C;
+                font-size: 13px;
+            }
+            .sticky{
+                position: fixed;
+                width: 14rem;
+                top: 0;
+                bottom:0;
+                overflow-y: auto;
+                margin-top: 50px;}
+
+            .sidebarmedium1head-menu{
+                background-color: white; 
+                padding: 25px 15px 15px 30px; 
+                box-sizing: border-box;
+                position: fixed;
+                width: 14rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #090865;
+                font-size: 14px;
+            }
+            .sidebarmedium1-menu{
+                background-color: white;
+                width: 14rem;
+                float: left;
+                bottom: 0; 
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: calc(100% - 14rem);
+                float: left;
+                display: table;
+            }
+            .content p{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 12px;
+                line-height: 1.4em;
+            }
+            .overlay{
+                background-color: rgba(0, 0, 0, 10%); 
+                width: 100%; 
+                bottom: 0; 
+                height: 100%; 
+                position: absolute; 
+                display: none;
+            }
+            .sidebarmedium1footer-menu{
+                bottom: 0; 
+                position: absolute; 
+                padding: 15px 15px 15px 30px; 
+                box-sizing: border-box;
+            }
+
+            @media(max-width: 960px){
+                .sidebarmedium1-menu-sm{
+                    display: none ;
+                    width: 20rem;
+                    position: relative;
+                    z-index: 1;
+                }
+                .sidebarmedium1head-menu{
+                    background-color: white; 
+                    padding: 25px 15px 15px 30px; 
+                    box-sizing: border-box;
+                    position: fixed;
+                    width: 14rem;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    color: #090865;
+                    font-size: 14px;
+                }
+                #menubutton{
+                    visibility: visible !important;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: 100% !important;
+                    float: left;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                }
+                .navbar{
+                    background-color: #EFF3F6; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .sticky{
+                    background-color: white;
+                    margin-top: 47px;
+                }
+            }
+
+            @media(min-width: 960px){
+                .sidebarmedium1-menu-lg{
+                    display: block !important ;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: calc(100% - 14rem);
+                    float: left;
+                    display: table;
+                }
+                .navbar{
+                    background-color: #EFF3F6 !important; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .overlay{
+                    display: none !important;
+                }
+            }
+        &lt;/style&gt;
+
+        &lt;script&gt;
+            function openNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;navbar&quot;).style.backgroundColor = &quot;#CCD0D5&quot;;
+
+            }
+            function closeNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;none&quot;;
+            }
+        &lt;/script&gt;
+
+        &lt;body&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;sidebarmedium1-menu sidebarmedium1-menu-sm sidebarmedium1-menu-lg&quot; id=&quot;mySidebar&quot;&gt;
+                    &lt;div class=&quot;sidebarmedium1head-menu&quot;&gt;Menu&lt;/div&gt;
+                        &lt;div class=&quot;sticky&quot;&gt;
+                            &lt;ul class=&quot;demo&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;                  
+                        &lt;div class=&quot;sidebarmedium1footer-menu&quot;&gt;
+                            &lt;a href=&quot;&quot;&gt;Settings&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;content&quot; id=&quot;main&quot;&gt;
+                    &lt;div onclick=&quot;closeNav()&quot; class=&quot;overlay&quot; id=&quot;trigger&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot;&gt; 
+                        &lt;a id=&quot;menubutton&quot; style=&quot;margin: 0px; visibility: hidden;&quot; onclick=&quot;openNav()&quot; class=&quot;material-icons&quot;&gt;menu&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div style=&quot;padding: 45px 15px 15px 15px; box-sizing: border-box;&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </pre>
                   </div>
 
@@ -406,6 +691,392 @@
                   <div class="col-12 " style="padding: 0px 0px 15px 0px">
                     <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
 
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;rel=&quot;stylesheet&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;rel=&quot;stylesheet&quot;&gt;
+        &lt;/head&gt;
+        &lt;style&gt;
+            body{
+                margin:0px;
+            }
+
+            .container-fluid {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .demo{
+                display: none;
+            }
+            ul.demo{
+                list-style-type: none;
+                margin: 0;
+                padding: 0px 15px 0px 15px;
+                box-sizing: border-box;
+            }
+            .demo li{
+                margin: 15px 0px 15px 0px;
+            }
+            .sticky a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                color: #7A7F9A;
+                font-size: 13px;
+            }
+            .label-container{
+                padding: 9px 15px 9px 30px;
+            }
+            .sidebarmedium2-menu label{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #44485C;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .sticky{
+                position: fixed;
+                width: 14rem;
+                top: 0;
+                bottom:0;
+                overflow-y: auto;
+                margin-top: 68px;
+            }
+
+            .sidebarmedium2head-menu{
+                background-color: white; 
+                padding: 25px 15px 15px 30px; 
+                box-sizing: border-box;
+                position: fixed;
+                width: 14rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #090865;
+                font-size: 14px;
+            }
+
+            .sidebarmedium2-menu{
+                background-color: white;
+                width: 14rem;
+                float: left;
+                bottom: 0; 
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: calc(100% - 14rem);
+                float: left;
+                display: table;
+            }
+            .content p{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 12px;
+                line-height: 1.4em;
+            }
+            .overlay{
+                background-color: rgba(0, 0, 0, 10%); 
+                width: 100%; 
+                bottom: 0; 
+                height: 100%; 
+                position: absolute; 
+                display: none;
+            }
+            .sidebarmedium2footer-menu{
+                bottom: 0; 
+                position: relative; 
+                padding: 9px 15px 9px 30px; 
+                box-sizing: border-box;
+                color : #44485C;
+            }
+            .sidebarmedium2footer-menu a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #44485C;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            @media(max-width: 960px){
+                .sidebarmedium2-menu-sm{
+                    display: none ;
+                    width: 20rem;
+                    position: relative;
+                    z-index: 1;
+                }
+                .sidebarmedium2head-menu{
+                    background-color: white; 
+                    padding: 25px 15px 15px 30px; 
+                    box-sizing: border-box;
+                    position: fixed;
+                    width: 14rem;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    color: #090865;
+                    font-size: 14px;
+                }
+                #menubutton{
+                    visibility: visible !important;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: 100% !important;
+                    float: left;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                }
+                .navbar{
+                    background-color: #EFF3F6; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .sticky{
+                    background-color: white;
+                    margin-top: 47px;
+                    padding-top: 21px;
+                    box-sizing: border-box;
+                }
+            }
+
+            @media(min-width: 960px){
+                .sidebarmedium2-menu-lg{
+                    display: block !important ;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: calc(100% - 14rem);
+                    float: left;
+                    display: table;
+                }
+                .navbar{
+                    background-color: #EFF3F6 !important; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .overlay{
+                    display: none !important;
+                }
+            }
+        &lt;/style&gt;
+
+        &lt;script&gt;
+            var acc = document.getElementsByClassName(&quot;accordion&quot;);
+            var i;
+
+            for (i = 0; i &lt; acc.length; i++) {
+            acc[i].addEventListener(&quot;click&quot;, function() {
+                this.classList.toggle(&quot;active&quot;);
+                var demo = this.nextElementSibling;
+                if (demo.style.display === &quot;block&quot;) {
+                demo.style.display = &quot;none&quot;;
+                } else {
+                demo.style.display = &quot;block&quot;;
+                }
+            });
+            }
+
+            function openNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;navbar&quot;).style.backgroundColor = &quot;#CCD0D5&quot;;
+
+                
+            
+            }
+            function closeNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;none&quot;;
+            }
+        &lt;/script&gt;
+        
+        &lt;body&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;sidebarmedium2-menu sidebarmedium2-menu-sm sidebarmedium2-menu-lg&quot; id=&quot;mySidebar&quot;&gt;
+                    &lt;div class=&quot;sidebarmedium2head-menu&quot;&gt;Menu Label&lt;/div&gt;
+                        &lt;div class=&quot;sticky&quot;&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Getting Started&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Browser Support&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Custom Version&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;What&rsquo;s New ?&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Elements&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Layouts&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Components&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Utilities&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;Experimental&lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                        &lt;div class=&quot;sidebarmedium2footer-menu&quot;&gt;
+                            &lt;a href=&quot;&quot;&gt;Settings&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;content&quot; id=&quot;main&quot;&gt;
+                    &lt;div onclick=&quot;closeNav()&quot; class=&quot;overlay&quot; id=&quot;trigger&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot;&gt; 
+                        &lt;a id=&quot;menubutton&quot; style=&quot;margin: 0px; visibility: hidden;&quot; onclick=&quot;openNav()&quot; class=&quot;material-icons&quot;&gt;menu&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div style=&quot;padding: 45px 15px 15px 15px; box-sizing: border-box;&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </pre>
                   </div>
 
@@ -425,6 +1096,346 @@
                   <div class="col-12 " style="padding: 0px 0px 15px 0px">
                     <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
 
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;script src=&quot;https://kit.fontawesome.com/1d04696186.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;rel=&quot;stylesheet&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;rel=&quot;stylesheet&quot;&gt;
+        &lt;/head&gt;
+        &lt;style&gt;
+            body{
+                margin:0px;
+            }
+
+            .container-fluid {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .demo{
+                display: none;
+            }
+            ul.demo{
+                list-style-type: none;
+                margin: 0;
+                padding: 0px 15px 0px 25px;
+                box-sizing: border-box;
+            }
+            .demo li{
+                margin: 15px 0px 15px 0px;
+            }
+            .sticky a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                color: #7A7F9A;
+                font-size: 13px;
+            }
+            .label-container{
+                padding: 9px 15px 9px 30px;
+            }
+            .test{
+                margin-right: 10px;
+            }
+            .sidebarmedium3-menu label{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif !important;
+                font-weight: 500;
+                color: #44485C;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .sticky{
+                position: fixed;
+                width: 14rem;
+                top: 0;
+                bottom:0;
+                overflow-y: auto;
+                margin-top: 68px;
+            }
+
+            .sidebarmedium3head-menu{
+                background-color: white; 
+                padding: 25px 15px 15px 30px; 
+                box-sizing: border-box;
+                position: fixed;
+                width: 14rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #090865;
+                font-size: 14px;
+            }
+
+            .sidebarmedium3-menu{
+                background-color: white;
+                width: 14rem;
+                float: left;
+                bottom: 0; 
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: calc(100% - 14rem);
+                float: left;
+                display: table;
+            }
+            .content p{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 12px;
+                line-height: 1.4em;
+            }
+            .overlay{
+                background-color: rgba(0, 0, 0, 10%); 
+                width: 100%; 
+                bottom: 0; 
+                height: 100%; 
+                position: absolute; 
+                display: none;
+            }
+            .sidebarmedium3footer-menu{
+                bottom: 0; 
+                position: relative; 
+                padding: 9px 15px 9px 30px; 
+                box-sizing: border-box;
+                color : #44485C;
+            }
+            .sidebarmedium3footer-menu a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #44485C;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            @media(max-width: 960px){
+                .sidebarmedium3-menu-sm{
+                    display: none ;
+                    width: 20rem;
+                    position: relative;
+                    z-index: 1;
+                }
+                .sidebarmedium3head-menu{
+                    background-color: white; 
+                    padding: 25px 15px 15px 30px; 
+                    box-sizing: border-box;
+                    position: fixed;
+                    width: 14rem;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    color: #090865;
+                    font-size: 14px;
+                }
+                #menubutton{
+                    visibility: visible !important;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: 100% !important;
+                    float: left;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                }
+                .navbar{
+                    background-color: #EFF3F6; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .sticky{
+                    background-color: white;
+                    margin-top: 47px;
+                    padding-top: 21px;
+                    box-sizing: border-box;
+                }
+            }
+
+            @media(min-width: 960px){
+                .sidebarmedium3-menu-lg{
+                    display: block !important ;
+                }
+                .content{
+                    background-color: #EFF3F6;
+                    width: calc(100% - 14rem);
+                    float: left;
+                    display: table;
+                }
+                .navbar{
+                    background-color: #EFF3F6 !important; 
+                    padding: 11px; 
+                    width: 100%; 
+                    box-sizing: border-box; 
+                    color: black;
+                    position: fixed;
+                }
+                .overlay{
+                    display: none !important;
+                }
+            }
+        &lt;/style&gt;
+
+        &lt;script&gt;
+            function openNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;navbar&quot;).style.backgroundColor = &quot;#CCD0D5&quot;;
+            }
+            function closeNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;none&quot;;
+            }
+        &lt;/script&gt;
+
+        &lt;body&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;sidebarmedium3-menu sidebarmedium3-menu-sm sidebarmedium3-menu-lg&quot; id=&quot;mySidebar&quot;&gt;
+                    &lt;div class=&quot;sidebarmedium3head-menu&quot;&gt;Menu Label&lt;/div&gt;
+                        &lt;div class=&quot;sticky&quot;&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-flag test&quot;&gt;&lt;/i&gt;Getting Started
+                                &lt;/label&gt;         
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-tools test&quot;&gt;&lt;/i&gt;Elements
+                                &lt;/label&gt;    
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-th test&quot;&gt;&lt;/i&gt;Layouts
+                                &lt;/label&gt;            
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-toolbox test&quot;&gt;&lt;/i&gt;Components
+                                &lt;/label&gt;               
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-user-cog test&quot;&gt;&lt;/i&gt;Utilities
+                                &lt;/label&gt;          
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-flask test&quot;&gt;&lt;/i&gt;Experimental
+                                &lt;/label&gt;       
+                            &lt;/div&gt;
+                        &lt;div class=&quot;sidebarmedium3footer-menu&quot;&gt;
+                            &lt;a href=&quot;&quot;&gt;
+                                &lt;i class=&quot;fas fa-cog test&quot;&gt;&lt;/i&gt;Settings
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;content&quot; id=&quot;main&quot;&gt;
+                    &lt;div onclick=&quot;closeNav()&quot; class=&quot;overlay&quot; id=&quot;trigger&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot;&gt; 
+                        &lt;a id=&quot;menubutton&quot; style=&quot;margin: 0px; visibility: hidden;&quot; onclick=&quot;openNav()&quot; class=&quot;material-icons&quot;&gt;menu&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div style=&quot;padding: 45px 15px 15px 15px; box-sizing: border-box;&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </pre>
                   </div>
 
@@ -444,6 +1455,406 @@
                   <div class="col-12 " style="padding: 0px 0px 15px 0px">
                     <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
 
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;script src=&quot;https://kit.fontawesome.com/1d04696186.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;rel=&quot;stylesheet&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;rel=&quot;stylesheet&quot;&gt;
+        &lt;/head&gt;
+        &lt;style&gt;
+            body{
+            margin:0px;
+        }
+
+        .container-fluid {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .demo{
+            display: none;
+        }
+        ul.demo{
+            list-style-type: none;
+            margin: 0;
+            padding: 0px 15px 0px 25px;
+            box-sizing: border-box;
+        }
+        .demo li{
+            margin: 15px 0px 15px 0px;
+        }
+        .sticky a{
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: #7A7F9A;
+            font-size: 13px;
+        }
+        .label-container{
+            padding: 9px 15px 9px 30px;
+        }
+        .test{
+            margin-right: 10px;
+        }
+        .sidebarmedium4-menu label{
+            text-decoration: none;
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 500;
+            color: #44485C;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .sticky{
+            position: fixed;
+            width: 14rem;
+            top: 0;
+            bottom:0;
+            overflow-y: auto;
+            margin-top: 68px;
+        }
+
+        .sidebarmedium4head-menu{
+            background-color: white; 
+            padding: 25px 15px 15px 30px; 
+            box-sizing: border-box;
+            position: fixed;
+            width: 14rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: #090865;
+            font-size: 14px;
+        }
+
+        .sidebarmedium4-menu{
+            background-color: white;
+            width: 14rem;
+            float: left;
+            bottom: 0; 
+        }
+        .content{
+            background-color: #EFF3F6;
+            width: calc(100% - 14rem);
+            float: left;
+            display: table;
+        }
+        .content p{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: #7A7F9A;
+            font-size: 12px;
+            line-height: 1.4em;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 10%); 
+            width: 100%; 
+            bottom: 0; 
+            height: 100%; 
+            position: absolute; 
+            display: none;
+        }
+        .sidebarmedium4footer-menu{
+            bottom: 0; 
+            position: relative; 
+            padding: 9px 15px 9px 30px; 
+            box-sizing: border-box;
+            color : #44485C;
+        }
+        .sidebarmedium4footer-menu a{
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: #44485C;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 960px){
+            .sidebarmedium4-menu-sm{
+                display: none ;
+                width: 20rem;
+                position: relative;
+                z-index: 1;
+            }
+            .sidebarmedium4head-menu{
+                background-color: white; 
+                padding: 25px 15px 15px 30px; 
+                box-sizing: border-box;
+                position: fixed;
+                width: 14rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #090865;
+                font-size: 14px;
+            }
+            #menubutton{
+                visibility: visible !important;
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: 100% !important;
+                float: left;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                right: 0;
+            }
+            .navbar{
+                background-color: #EFF3F6; 
+                padding: 11px; 
+                width: 100%; 
+                box-sizing: border-box; 
+                color: black;
+                position: fixed;
+            }
+            .sticky{
+                background-color: white;
+                margin-top: 47px;
+                padding-top: 21px;
+                box-sizing: border-box;
+            }
+        }
+
+        @media(min-width: 960px){
+            .sidebarmedium4-menu-lg{
+                display: block !important ;
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: calc(100% - 14rem);
+                float: left;
+                display: table;
+            }
+            .navbar{
+                background-color: #EFF3F6 !important; 
+                padding: 11px; 
+                width: 100%; 
+                box-sizing: border-box; 
+                color: black;
+                position: fixed;
+            }
+            .overlay{
+                display: none !important;
+            }
+        }
+        &lt;/style&gt;
+        &lt;script&gt;
+            var acc = document.getElementsByClassName(&quot;accordion&quot;);
+            var i;
+
+            for (i = 0; i &lt; acc.length; i++) {
+            acc[i].addEventListener(&quot;click&quot;, function() {
+                this.classList.toggle(&quot;active&quot;);
+                var demo = this.nextElementSibling;
+                if (demo.style.display === &quot;block&quot;) {
+                demo.style.display = &quot;none&quot;;
+                } else {
+                demo.style.display = &quot;block&quot;;
+                }
+            });
+            }
+
+            function openNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;navbar&quot;).style.backgroundColor = &quot;#CCD0D5&quot;;
+
+            }
+            function closeNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;none&quot;;
+            }
+        &lt;/script&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;sidebarmedium4-menu sidebarmedium4-menu-sm sidebarmedium4-menu-lg&quot; id=&quot;mySidebar&quot;&gt;
+                    &lt;div class=&quot;sidebarmedium4head-menu&quot;&gt;Menu Label&lt;/div&gt;
+                        &lt;div class=&quot;sticky&quot;&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-flag test&quot;&gt;&lt;/i&gt;Getting Started
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Browser Support&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Custom Version&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;What&rsquo;s New ?&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-tools test&quot;&gt;&lt;/i&gt;Elements
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-th test&quot;&gt;&lt;/i&gt;Layouts
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-toolbox test&quot;&gt;&lt;/i&gt;Components
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-user-cog test&quot;&gt;&lt;/i&gt;Utilities
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label class=&quot;accordion&quot;&gt;
+                                    &lt;i class=&quot;fas fa-flask test&quot;&gt;&lt;/i&gt;Experimental
+                                &lt;/label&gt;
+                                &lt;ul class=&quot;demo&quot;&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Layouts&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Utilities&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;&quot;&gt;Experimental&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;                  
+                            &lt;/div&gt;
+                        &lt;div class=&quot;sidebarmedium4footer-menu&quot;&gt;
+                            &lt;a href=&quot;&quot;&gt;
+                                &lt;i class=&quot;fas fa-cog test&quot;&gt;&lt;/i&gt;Settings
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;content&quot; id=&quot;main&quot;&gt;
+                    &lt;div onclick=&quot;closeNav()&quot; class=&quot;overlay&quot; id=&quot;trigger&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;navbar&quot; id=&quot;navbar&quot;&gt; 
+                        &lt;a id=&quot;menubutton&quot; style=&quot;margin: 0px; visibility: hidden;&quot; onclick=&quot;openNav()&quot; class=&quot;material-icons&quot;&gt;menu&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div style=&quot;padding: 45px 15px 15px 15px; box-sizing: border-box;&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </pre>
                   </div>
 
@@ -463,6 +1874,257 @@
                   <div class="col-12 " style="padding: 0px 0px 15px 0px">
                     <pre class="bg-dark-blue border-radius font-14 lineheight-1 font-cyan pre-style">
 
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;script src=&quot;https://kit.fontawesome.com/1d04696186.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;rel=&quot;stylesheet&quot;&gt;
+            &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;rel=&quot;stylesheet&quot;&gt;
+        &lt;/head&gt;
+        &lt;style&gt;
+            body{
+                margin:0px;
+            }
+
+            .container-fluid {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .sticky a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                color: #7A7F9A;
+                font-size: 13px;
+            }
+            .label-container{
+                padding: 9px 15px 20px 15px;
+                text-align: center;
+            }
+
+            .sidebarsmall1-menu label{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif !important;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .sticky{
+                position: fixed;
+                width: 4rem;
+                top: 0;
+                bottom:0;
+                overflow-y: auto;
+                margin-top: 68px;
+            }
+
+            .sidebarsmall1head-menu{
+                background-color: white; 
+                padding: 25px 15px 15px 15px; 
+                box-sizing: border-box;
+                position: fixed;
+                width: 4rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                color: #7A7F9A;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .sidebarsmall1-menu{
+                background-color: white;
+                width: 4rem;
+                float: left;
+                bottom: 0; 
+            }
+            .content{
+                background-color: #EFF3F6;
+                width: calc(100% - 4rem);
+                float: left;
+                display: table;
+            }
+            .content p{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 12px;
+                line-height: 1.4em;
+            }
+            .sidebarsmall1footer-menu{
+                bottom: 0; 
+                position: absolute; 
+                padding: 9px 15px 25px 15px; 
+                box-sizing: border-box;
+                text-align: center;
+                width: 4rem;
+                color : #7A7F9A;
+            }
+            .sidebarsmall1footer-menu a{
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                color: #7A7F9A;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+        &lt;/style&gt;
+
+        &lt;script&gt;
+            function openNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;block&quot;;
+                document.getElementById(&quot;navbar&quot;).style.backgroundColor = &quot;#CCD0D5&quot;;
+            }
+            function closeNav() {
+                document.getElementById(&quot;mySidebar&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;trigger&quot;).style.display = &quot;none&quot;;
+            }    
+        &lt;/script&gt;
+
+        &lt;body&gt;
+            &lt;div class=&quot;container-fluid&quot;&gt;
+                &lt;div class=&quot;sidebarsmall1-menu sidebarsmall1-menu-sm sidebarsmall1-menu-lg&quot; id=&quot;mySidebar&quot;&gt;
+                    &lt;div class=&quot;sidebarsmall1head-menu&quot;&gt; &lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                        &lt;div class=&quot;sticky&quot;&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;a href=&quot;https://www.facebook.com&quot;&gt;&lt;i class=&quot;fas fa-flag test&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                &lt;/label&gt;         
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;i class=&quot;fas fa-tools test&quot;&gt;&lt;/i&gt;
+                                &lt;/label&gt;    
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;i class=&quot;fas fa-th test&quot;&gt;&lt;/i&gt;
+                                &lt;/label&gt;            
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;i class=&quot;fas fa-toolbox test&quot;&gt;&lt;/i&gt;
+                                &lt;/label&gt;               
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;i class=&quot;fas fa-user-cog test&quot;&gt;&lt;/i&gt;
+                                &lt;/label&gt;          
+                            &lt;/div&gt;
+                            &lt;div class=&quot;label-container&quot;&gt;
+                                &lt;label&gt;
+                                    &lt;i class=&quot;fas fa-flask test&quot;&gt;&lt;/i&gt;
+                                &lt;/label&gt;       
+                            &lt;/div&gt;
+                        &lt;div class=&quot;sidebarsmall1footer-menu&quot;&gt;
+                            &lt;a href=&quot;&quot;&gt;
+                                &lt;i class=&quot;fas fa-cog test&quot;&gt;&lt;/i&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;content&quot;&gt;
+                    &lt;div style=&quot;padding: 20px; box-sizing: border-box;&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam, mi eu fringilla posuere, 
+                            nisl risus lobortis nunc, eget viverra elit diam vel lectus. Phasellus efficitur tempus justo. 
+                            Nam in hendrerit ex, in accumsan mauris. Ut aliquam augue urna, nec ultricies nulla porta in. 
+                            Nullam vitae tincidunt massa. Etiam ornare dui eu dolor porta, ut convallis magna placerat. 
+                            Nulla varius aliquet urna. Sed a eros velit. Sed commodo neque non sapien vestibulum, vitae aliquam dui molestie. 
+                            Suspendisse efficitur venenatis purus nec rhoncus. Praesent mi risus, maximus ac arcu commodo, porta ornare ex. 
+                            Vivamus consectetur sit amet risus ut suscipit. Donec fermentum tellus ac magna ultricies aliquam. 
+                            Curabitur ornare, nisi ac ultrices semper, orci sapien ultrices elit, eu mollis elit ipsum eu lectus.&lt;/p&gt;
+                        
+                        &lt;p&gt;
+                            Sed hendrerit commodo sodales. Nulla nec volutpat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas et tortor sed tortor facilisis posuere. Ut commodo, tortor ac iaculis viverra, nibh nisi faucibus tellus, 
+                            id porttitor purus ligula vitae velit. Integer viverra varius enim. Nullam eget est sed nisi congue dictum. 
+                            Etiam mollis, velit euismod rhoncus eleifend, turpis nibh dapibus erat, non condimentum turpis nisl eget odio. 
+                            Pellentesque sed ex sed lacus auctor fermentum. Cras ac sapien vitae est feugiat tristique. 
+                            Etiam eget sapien eget augue porta hendrerit ut commodo elit. Fusce vel justo sed tellus sollicitudin sodales.
+                        &lt;/p&gt;
+                            
+                        &lt;p&gt;
+                            Suspendisse hendrerit vel enim at venenatis. Ut dictum ultricies eros a ultrices. Pellentesque ac sagittis libero. 
+                            Nam pretium dignissim ligula egestas molestie. Aenean sagittis felis ultricies ex congue tempor. 
+                            Donec eget consectetur felis. Maecenas sed metus accumsan mauris finibus tincidunt eget non dui. 
+                            Nunc id hendrerit metus, sit amet pellentesque tellus.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Vestibulum et leo semper, ultricies lorem a, hendrerit sapien. Cras eleifend orci leo, vitae semper turpis vulputate pretium. 
+                            Aliquam eget ante eget nulla congue vehicula. Donec lectus massa, maximus eget convallis id, auctor a risus. 
+                            Integer vehicula nibh dolor. Donec tristique egestas egestas. Cras fermentum id sem et luctus. Donec finibus nunc metus, 
+                            non porttitor nisl pharetra vitae. Curabitur blandit tellus vitae quam laoreet, at tristique diam sollicitudin. 
+                            Sed tincidunt ipsum ac condimentum ultrices. Maecenas vitae libero viverra, venenatis tellus a, congue ex. Donec dictum, 
+                            nulla non semper vehicula, mi velit accumsan eros, et pretium ex augue semper ex. Nullam at libero eu arcu interdum mattis at nec nibh. 
+                            Etiam non gravida orci.
+                        &lt;/p&gt;
+
+                        &lt;p&gt;
+                            Ut rutrum sollicitudin lectus, a mollis quam gravida eu. Pellentesque maximus scelerisque diam a feugiat. Etiam nec arcu lobortis, sagittis ex at, 
+                            maximus neque. Sed molestie suscipit justo, vel finibus urna rutrum vel. Mauris venenatis sem sit amet neque blandit,
+                            vitae sollicitudin erat pellentesque. Curabitur vulputate feugiat turpis, at posuere urna accumsan et. 
+                            Duis sed fermentum nisi. Vivamus consequat dui sem, ac gravida dolor consectetur et. Proin tincidunt ornare ultrices.
+                              Praesent sit amet dui lorem. Suspendisse faucibus est non felis rutrum fringilla. Mauris sit amet dui id mauris congue accumsan. 
+                              Donec quis ex molestie, dictum dui sit amet, tincidunt turpis.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </pre>
                   </div>
 
